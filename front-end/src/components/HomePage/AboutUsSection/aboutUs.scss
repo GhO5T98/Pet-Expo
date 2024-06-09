@@ -1,0 +1,49 @@
+@import "../../../styles/variables";
+
+.image-container {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  .shape {
+    position: absolute;
+    border-radius: 50%;
+  }
+  .background-shape {
+    width: 100%;
+    height: 100%;
+    background-color: $prim-col;
+    top: 25px;
+    left: 20px;
+    border-radius: 44% 56% 61% 39% / 35% 28% 72% 65%;
+  }
+  .overlay-shape {
+    width: 90%;
+    height: 90%;
+    background-color: $sec-col;
+    top: 0;
+    left: 0;
+    border-radius: 44% 56% 61% 39% / 35% 28% 72% 65%;
+  }
+  .image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 44% 56% 61% 39% / 35% 28% 72% 65%;
+  }
+}
+
+.underlined {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.underlined::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background-color: $prim-col;
+}

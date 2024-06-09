@@ -1,0 +1,31 @@
+//Colors//
+$bg-col: #252525;
+$font-col: #f5f5f5;
+$nav-col: #121212;
+$prim-col: #a9def9;
+$sec-col: #ffffff;
+$dash-bg-col: #151515;
+$dash-txt-col: #f2f2f2;
+
+//Font Size//
+$tiny-font: 0.8rem;
+$sm-font: 1rem;
+$med-font: 1.5rem;
+$big-font: 2.5rem;
+
+//Medium Text//
+@mixin mid-text {
+  color: $dash-txt-col;
+  font-size: $med-font;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+//Hero - Text//
+@mixin hero-text {
+  color: $font-col;
+  font-size: $big-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
